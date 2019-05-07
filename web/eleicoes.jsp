@@ -35,10 +35,10 @@
                 if ((Boolean) session.getAttribute("login")) {
                 } else {
                     out.print("Você não pode estar aqui!");
-                    response.sendRedirect("index.html");
+                    response.sendRedirect("");
                 }
             }else{
-                response.sendRedirect("index.html");
+                response.sendRedirect("");
             }
         %>
 
@@ -49,6 +49,7 @@
         
         
         <button type="button" onClick="redirect()" class="btn btn-link">Nova Eleição</button>
+        <button type="button" style="float:right;" onClick="resultados()" class="btn btn-link">Ver resultados da eleição</button>
         <ul class="list-group list-group-flush" style="width: 100%;">
               <div class="card-header">
                 Eleições
@@ -103,11 +104,7 @@
                     
                 </div>
               </div>
-                
-               
-              <button type="button" onClick="resultados()" class="btn btn-link">Ver resultados da eleição</button>
-                    
-                
+                 
             </div>
         
                     

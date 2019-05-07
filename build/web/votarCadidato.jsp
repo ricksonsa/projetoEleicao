@@ -15,7 +15,7 @@
             if (session.getAttribute("login") != null) {
                 if ((Boolean) session.getAttribute("login")) {
                 } else {
-                    response.sendRedirect("index.html");
+                    response.sendRedirect("");
                 }
             }else{
                 response.sendRedirect("");
